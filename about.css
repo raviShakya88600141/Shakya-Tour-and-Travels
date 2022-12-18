@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    justify-content: end;
+    padding: 20px 20px;
+    color: #4C0033;
+    font-weight: bolder;
+    height: 4vh;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #4C0033;
+}
+
+.header span {
+    background-color: rgb(237, 153, 26);
+    border-radius: 10px;
+    width: 10%;
+    text-align: center;
+    height: 4vh;
+}
+
+.logo {
+    height: 0px;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    padding: 0px 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./singa.jpg) no-repeat center center/cover;
+}
+
+.container h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.container h1:hover {
+    transform: scale(1.5);
+    transition: 0.8s ease-in-out;
+}
+
+.container-two {
+    gap: 100px;
+    display: flex;
+}
+
+.container-two img {
+    width: 50%;
+}
+
+.main-two {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-two h1 {
+    color: #4C0033;
+    padding: 20px 10px;
+}
+
+.main-two h3 {
+    color: #9a3277;
+    padding: 0px 9px;
+
+}
+
+.main-two p {
+    padding: 0px 15px;
+    color: #965a82;
+}
+
+.main-two button {
+    display: flex;
+    width: 30vh;
+    height: 5vh;
+    background-color: #4C0033;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    color: white;
+    margin: 30px 30px;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 0px 15px;
+
+}
+
+.main-two button:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+    background-color: rgb(0, 0, 74);
+}
+
+.container-three {
+    background: url(./360_F_294375555_tpcdo43DC1XFr6kpSv4v4bEsmcY1GgWz.jpg) no-repeat center center/cover;
+    height: 70vh;
+    /* opacity: 0.90; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-three h1 {
+    color: #4C0033;
+    font-size: 60px;
+
+}
+
+.container-three p {
+    color: #965a82;
+    /* align-items: center; */
+    width: 80vh;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.comment img {
+    font-weight: bold;
+    height: 10vh;
+    width: 10vh;
+}
+
+.comment h5 {
+    font-size: 20px;
+    color: #4C0033;
+}
+
+.container-four {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-four h1 {
+    color: #4C0033;
+    font-size: 40px;
+}
+
+.container-four h4 {
+    color: #4C0033;
+}
+
+.container-five {
+    display: flex;
+    gap: 100px;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.in h4 {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #4C0033;
+    height: 5vh;
+    padding-right: 0px 30px;
+}
+
+.out img {
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.btn {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    background-color: #9a3277;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn button:hover {
+    transform: scale(1.3);
+    background-color: rgb(0, 0, 49);
+    border-radius: 5px;
+    transition: 0.8s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-one {
+    display: flex;
+
+}
+
+.img-one img {
+    width: 25vw;
+    height: 30vh;
+}
+
+.img-one img:hover {
+    transform: rotate(10deg);
+    transition: 0.5s ease-in-out;
+}
+
+.container-six {
+    height: 50vh;
+    color: white;
+    gap: 200px;
+    background-color: #4C0033;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.one {
+    width: 20vw;
+    padding: 30px;
+}
+
+.one p {
+    width: 50vh;
+}
+
+.one img {
+    width: 10vw;
+}
+
+.two {
+    margin-top: 30px;
+}
+
+.three {
+    margin-top: 30px;
+}
+
+.four {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.copy {
+    background-color: #4C0033;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
