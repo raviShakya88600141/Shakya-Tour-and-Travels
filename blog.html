@@ -9,22 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Roboto+Mono&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="blog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="home.html"><img src="./logo-removebg-preview.png" alt=""></a>
-        </div>
-        <ul>
-            <li><a href="home.html"> Home </a></li>
-            <li><a href="event.html"> Events </a></li>
-            <li><a href="about.html"> About </a></li>
-            <li><a href="blog.html"> Blog </a></li>
-            <li><a href="contact.html"> Contact </a></li>
-            <span><a href="/contact.html">+8860014541 </a></span>
-        </ul>
+    <div class="centerLoadingIcon" id="centerLoadingIcon">
+        <div id="load" class="lds-hourglass"></div>
     </div>
+    <div id="contents">
+        <div class="header">
+
+            <div class="logo">
+                <a href="home.html"><img src="./logo-removebg-preview.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="event.html"> Events </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="blog.html"> Blog </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+
+            </ul>
+        </div>
     </div>
     <div class="container">
         <h1>Blogs</h1>
@@ -63,12 +70,7 @@
         <img src="./5.jpg" alt="">
     </div>
     <div class="container-six">
-        <div class="one">
-            <img src="./logo-removebg-preview.png" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde deleniti eaque nulla ducimus.
 
-            </p>
-        </div>
         <div class="two">
             <h3>Navigation</h3>
             <br><br>
@@ -105,9 +107,30 @@
         </div>
     </div>
     <div class="copy">
-        <h4>||copyright&copy;2022 All Rights Reserved||</h4>
+        <h4>&copy;
+            <span id="year123"></span>
+            All Rights Reserved
+        </h4>
+    </div>
     </div>
 
 </body>
+<script>
+    document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.display = "block";
+        } else if (state == 'complete') {
+            setTimeout(function () {
+                document.getElementById('centerLoadingIcon').style.display = "none";
+                document.getElementById('contents').style.display = "block";
+            }, 1000);
+        }
+    }
+
+    const year = new Date().getFullYear()
+    const year12356 = document.getElementById("year123")
+    year12356.innerHTML = year
+</script>
 
 </html>

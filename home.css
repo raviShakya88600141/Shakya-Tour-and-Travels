@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+    z-index: 5;
     width: 100%;
     background-color: white;
     position: sticky;
@@ -35,13 +36,7 @@ body {
     color: #4C0033;
 }
 
-.header span {
-    background-color: rgb(237, 153, 26);
-    border-radius: 10px;
-    width: 10%;
-    text-align: center;
-    height: 4vh;
-}
+
 
 .logo {
     height: 0px;
@@ -54,6 +49,7 @@ body {
 }
 
 .container {
+    background-color: whitesmoke;
     padding: 20px;
     height: 70vh;
     display: flex;
@@ -98,12 +94,12 @@ body {
     align-items: center;
     background: url(./background-removebg-preview.png) no-repeat center center/cover;
     height: 50vh;
-    border-radius: 30rem;
+
 }
 
 .container-one h1 {
     color: white;
-    font-size: 50px;
+    font-size: 100px;
 
 }
 
@@ -113,6 +109,7 @@ body {
 }
 
 .text {
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,6 +128,7 @@ body {
 }
 
 .image {
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -160,6 +158,7 @@ body {
 }
 
 .container-two {
+    background-color: whitesmoke;
     gap: 100px;
     display: flex;
 }
@@ -194,7 +193,7 @@ body {
 
 .main-two button {
     display: flex;
-    width: 30vh;
+    width: 30vw;
     height: 5vh;
     background-color: #4C0033;
     align-items: center;
@@ -230,10 +229,12 @@ body {
 
 }
 
+
+
 .container-three p {
     color: #965a82;
     /* align-items: center; */
-    width: 80vh;
+    /* width: 80vh; */
 }
 
 .comment {
@@ -254,6 +255,7 @@ body {
 }
 
 .container-four {
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     height: 20vh;
@@ -271,6 +273,7 @@ body {
 }
 
 .container-five {
+    background-color: whitesmoke;
     display: flex;
     gap: 100px;
     /* width: 100%; */
@@ -288,10 +291,11 @@ body {
 
 .out img {
     width: 100%;
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
 }
 
 .btn {
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
 }
@@ -312,6 +316,7 @@ body {
 }
 
 .videoTag {
+    background-color: whitesmoke;
     display: flex;
     padding: 50px;
     align-items: center;
@@ -332,6 +337,7 @@ iframe {
 }
 
 .img-one {
+    background-color: whitesmoke;
     display: flex;
 
 }
@@ -356,13 +362,24 @@ iframe {
     /* align-items: center; */
 }
 
+.container-seven {
+    display: flex;
+    gap: 35%;
+    justify-content: end;
+}
+
+.main:hover {
+    transform: scale();
+}
+
+
 .one {
-    width: 20vw;
+    width: 50vw;
     padding: 30px;
 }
 
 .one p {
-    width: 50vh;
+    width: 50vw;
 }
 
 .one img {
@@ -371,15 +388,18 @@ iframe {
 
 .two {
     margin-top: 30px;
+    font-size: 20px;
 }
 
 .three {
     margin-top: 30px;
+    font-size: 20px;
 }
 
 .four {
     margin-top: 30px;
-    margin-right: 20px;
+    font-size: 20px;
+
 }
 
 .copy {
@@ -396,8 +416,350 @@ a {
     color: white;
 }
 
-@media screen and(max-width:786px) {
+.centerLoadingIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-hourglass::after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #4C0033;
+    border-color: #4C0033 transparent #4C0033 transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .text {
+        height: 25vh;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container button {
+        width: 34vw;
+        margin: 0;
+        font-size: 12px;
+        height: 5vh;
+    }
+
+
+
+
+    .header ul {
+        font-size: 10px;
+        gap: 12px;
+        align-items: center;
+    }
+
     .container {
-        width: 50%;
+        height: 50vh;
+    }
+
+    .image {
+        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .container-one {
+        height: 16vh;
+    }
+
+    .container-one h1 {
+        font-size: 30px;
+    }
+
+    .text h1 {
+        font-size: 36px;
+    }
+
+    .container-two {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .main-two {
+        width: 100%;
+        height: 60vh;
+        align-items: center;
+    }
+
+    .container-two img {
+        width: 100%;
+    }
+
+    .container-three {
+        height: 30vh;
+    }
+
+    .container-three p {
+        font-size: 10px;
+    }
+
+    .container-four {
+        height: 12vh;
+    }
+
+    .in h4 {
+        font-size: 12px;
+        height: 1vh;
+
+    }
+
+    .container-four h1 {
+        font-size: 20px;
+    }
+
+    .container-five {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .container-six {
+        height: 120vh;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .container-seven {
+        display: flex;
+        gap: 10%;
+        flex-direction: column;
+
+    }
+
+    .img-one img {
+        width: 25vw;
+        height: 25vh
+    }
+
+
+
+    .one {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-two button {
+        width: 60vw;
+    }
+
+
+
+
+    .two h3 {
+        font-size: 45px;
+    }
+
+
+    .three h3 {
+        font-size: 45px;
+    }
+
+    .four h3 {
+        font-size: 45px;
+    }
+
+    .main-two p {
+        margin: 10px 15px;
+
+    }
+
+    .main-two h1 {
+        font-size: 15px;
+    }
+
+    .main-two h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 65px;
+    }
+
+    .container-three h1 {
+        font-size: 30px;
+    }
+
+    .button-one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .videoTag {
+        padding: 10px;
+    }
+
+    .two {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .four {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main:hover {
+        transform: scale(1);
+    }
+
+    .main {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+    .container-one h1 {
+        font-size: 60px;
+    }
+
+    .container-one {
+        height: 35vh;
+    }
+
+    .container-two {
+        flex-direction: column;
+    }
+
+    .container-two img {
+        width: 100%;
+    }
+
+    .image {
+        flex-direction: column;
+    }
+
+    .text {
+        height: 30vh;
+    }
+
+    .main-two {
+        width: 100%;
+        height: 40vh;
+        align-items: center;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .main-two h3 {
+        font-size: 50px;
+    }
+
+    .main:hover {
+        transform: scale(1);
+    }
+
+    .container-four h1 {
+        font-size: 38px;
+    }
+
+    .in {
+        padding: 0px 15px;
+    }
+
+    .in h4 {
+        font-size: 15px;
+    }
+
+
+
+    .container-six {
+        gap: 100px;
+    }
+
+    .two {
+        font-size: 15px;
+    }
+
+    .three {
+        font-size: 15px;
+    }
+
+    .four {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width:901px) and (max-width:1200px) {
+    .out img {
+        padding: 0;
+    }
+
+    .main {
+        width: 28%;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .container-one h1 {
+        font-size: 90px;
     }
 }

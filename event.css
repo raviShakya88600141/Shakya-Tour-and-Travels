@@ -9,6 +9,8 @@ body {
 }
 
 .header {
+    z-index: 5;
+    width: 100%;
     background-color: white;
     position: sticky;
     top: 0;
@@ -32,17 +34,12 @@ body {
     color: #4C0033;
 }
 
-.header span {
-    background-color: rgb(237, 153, 26);
-    border-radius: 10px;
-    width: 10%;
-    text-align: center;
-    height: 4vh;
-}
 
 .logo {
     height: 0px;
 }
+
+
 
 .logo img {
     height: 70px;
@@ -71,6 +68,7 @@ body {
 }
 
 .text {
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,10 +83,11 @@ body {
 
 .text h1 {
     color: #4C0033;
-    font-size: 60px;
+    font-size: 44px;
 }
 
 .image {
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -126,6 +125,7 @@ body {
 }
 
 .videoTag {
+    background-color: whitesmoke;
     display: flex;
     padding: 50px;
     align-items: center;
@@ -138,6 +138,7 @@ iframe {
 }
 
 .img-one {
+    background-color: whitesmoke;
     display: flex;
 
 }
@@ -177,15 +178,17 @@ iframe {
 
 .two {
     margin-top: 30px;
+    font-size: 20px;
 }
 
 .three {
     margin-top: 30px;
+    font-size: 20px;
 }
 
 .four {
     margin-top: 30px;
-    margin-right: 20px;
+    font-size: 20px;
 }
 
 .copy {
@@ -198,4 +201,189 @@ iframe {
 a {
     text-decoration: none;
     color: white;
+}
+
+.centerLoadingIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-hourglass::after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #4C0033;
+    border-color: #4C0033 transparent #4C0033 transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        height: 30vh;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container-three {
+        height: 35vh;
+    }
+
+    .container-three h1 {
+        font-size: 40px;
+    }
+
+    .container-four h1 {
+        font-size: 35px;
+    }
+
+    .container-five {
+        flex-direction: column;
+    }
+
+    .text {
+        height: 20vh;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .header ul {
+        font-size: 10px;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .image {
+        flex-direction: column;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .img-one img {
+        width: 25vw;
+        height: 25vh;
+    }
+
+    .container-six {
+        height: 120vh;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+
+
+    .two {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .four {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two h3 {
+        font-size: 45px;
+    }
+
+    .three h3 {
+        font-size: 45px;
+    }
+
+    .four h3 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+    .image {
+        flex-direction: column;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .container-six {
+        gap: 100px;
+    }
+
+    .two {
+        font-size: 15px;
+    }
+
+    .three {
+        font-size: 15px;
+    }
+
+    .four {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+    .out img {
+        padding: 0;
+    }
+
+    .main {
+        width: 28%;
+    }
+
+    .main img {
+        width: 100%;
+    }
 }
